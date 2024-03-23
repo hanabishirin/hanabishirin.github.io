@@ -10921,12 +10921,12 @@ video.bg-video {
 }
 
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-  font-size: 4rem;
+  font-size: 8rem;
   font-family: system-ui;
   font-weight: 100;
 }
 .masthead .masthead-content p {
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-family: system-ui;
 }
 .masthead .masthead-content p strong {
@@ -10985,6 +10985,12 @@ video.bg-video {
     right: 10vw;
     top: 35vh;
   }
+
+  .masthead .masthead-contact p {
+    font-size: 0.8rem;
+    font-family: system-ui;
+  }
+
   .masthead .masthead-content h6, .masthead .masthead-content .h6 {
     font-size: 1rem;
     font-family: system-ui;
