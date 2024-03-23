@@ -10980,10 +10980,8 @@ video.bg-video {
   .masthead .masthead-contact {
     position: absolute;
     max-width: 40rem;
-    padding-top: 27%;
-    padding-bottom: 25%;
     right: 10vw;
-    /* top: 0vh; */
+    top: 35vh;
   }
   .masthead .masthead-content h6, .masthead .masthead-content .h6 {
     font-size: 1rem;
