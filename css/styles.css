@@ -10914,7 +10914,7 @@ video.bg-video {
 }
 
 .masthead .masthead-content h6, .masthead .masthead-content .h6 {
-  font-size: 1rem;
+  font-size: 3rem;
   font-family: system-ui;
   font-weight: 100;
   border-bottom: 1px solid white;
@@ -10931,6 +10931,10 @@ video.bg-video {
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
+}
+.masthead .masthead-contact p {
+  font-size: 2rem;
+  font-family: system-ui;
 }
 .masthead .masthead-content .input-group-newsletter input {
   height: auto;
