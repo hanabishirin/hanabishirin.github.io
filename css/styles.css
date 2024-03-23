@@ -10857,6 +10857,23 @@ video.bg-video {
   z-index: 0;
 }
 
+.logo-pos {
+  position: absolute;
+  top: 5px;
+}
+
+#logo {
+  width: 50vw;
+}
+
+.b-line{
+  width: 40%;
+  padding: 2px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 @media (pointer: coarse) and (hover: none) {
   body {
     background: url("../assets/img/bg-mobile-fallback.jpg") #2a5555 no-repeat center center scroll;
@@ -10867,7 +10884,6 @@ video.bg-video {
   }
 }
 .masthead {
-  position: relative;
   overflow: hidden;
   z-index: 2;
   display: flex;
@@ -10883,19 +10899,36 @@ video.bg-video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffffcf;
+  background-color: #00000099;
 }
 .masthead .masthead-content {
-  position: relative;
+  position: absolute;
   max-width: 40rem;
-  padding-top: 27%;
-  padding-bottom: 25%;
+  left: 15vw;
+  top: 15vh;
 }
+
+.masthead .masthead-contact {
+  position: absolute;
+  max-width: 40rem;
+  top: 45vh;
+}
+
+.masthead .masthead-content h6, .masthead .masthead-content .h6 {
+  font-size: 1rem;
+  font-family: system-ui;
+  font-weight: 100;
+  border-bottom: 1px solid white;
+}
+
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
   font-size: 2.5rem;
+  font-family: system-ui;
+  font-weight: 100;
 }
 .masthead .masthead-content p {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-family: system-ui;
 }
 .masthead .masthead-content p strong {
   font-weight: 700;
@@ -10913,16 +10946,21 @@ video.bg-video {
   letter-spacing: 1px;
   padding: calc(1rem + 2px);
 }
+.u_s {
+  border-bottom: 1px solid white;
+  width: fit-content;
+
+}
 
 @media (min-width: 992px) {
   .masthead {
     height: 100%;
-    width: 75vw;
+    width: 100vw;
     min-height: 0;
     padding-bottom: 0;
   }
   .masthead:before {
-    transform: skewX(-9deg);
+    transform: skewX(0deg);
     transform-origin: top right;
   }
   .masthead .masthead-content {
@@ -10932,15 +10970,48 @@ video.bg-video {
     padding-right: 9rem;
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+    font-family: system-ui;
   }
   .masthead .masthead-content p {
     font-size: 1.3rem;
+    font-family: system-ui;
+  }
+  .masthead .masthead-contact {
+    position: absolute;
+    max-width: 40rem;
+    padding-top: 27%;
+    padding-bottom: 25%;
+    right: 10vw;
+    /* top: 0vh; */
+  }
+  .masthead .masthead-content h6, .masthead .masthead-content .h6 {
+    font-size: 1rem;
+    font-family: system-ui;
+    font-weight: 100;
+  }
+
+  .logo-pos {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  #logo {
+    width: 15vw;
+  }
+  
+  .b-line{
+    width: 40%;
+    padding: 2px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
   .masthead {
-    width: 65vw;
+    width: 100vw;
   }
 }
 .social-icons {
@@ -10960,9 +11031,9 @@ video.bg-video {
 @media (min-width: 992px) {
   .social-icons {
     position: absolute;
-    height: 100%;
-    top: 0;
-    right: 2.5rem;
+    /* height: 100%; */
+    bottom: 0;
+    right: 40%;
     width: auto;
   }
 }
